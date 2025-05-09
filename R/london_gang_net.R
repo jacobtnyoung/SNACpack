@@ -2,12 +2,8 @@
 #'
 #' A one-mode network of 54 individuals represented as a `network` object.
 #'
-#' The network comes from an investigation into to a large cocaine trafficking organization in New York City.
-#' The ties are communications through police wiretaps and represented as directed binary relations.
-
 #' The network represents co-offending among a London-based inner-city street gang, 2005-2009.
-#' Data comes from anonymised police arrest and conviction data for all "confirmed" members of the gang.
-
+#' Data comes from anonymized police arrest and conviction data for all "confirmed" members of the gang.
 #'
 #' @references
 #' Grund, T. and Densley, J. (2015). Ethnic homophily and triad closure: Mapping internal gang structure using exponential random graph models. *Journal of Contemporary Criminal Justice*, 31(3), 354–370.

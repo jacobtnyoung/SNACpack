@@ -1,5 +1,5 @@
 # ------------------------------------------- #
-# Build COCAIN DEALING data files for SNACpack
+# Build COCAINE DEALING data files for SNACpack
 
 # ----
 # Setup
