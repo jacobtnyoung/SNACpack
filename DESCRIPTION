@@ -1,0 +1,13 @@
+Package: SNACpack
+Type: Package
+Title: Social Network Analysis for Crime (Analysts) Package
+Version: 0.1.0
+Author: Jacob T.N. Young
+Maintainer: Jacob T.N. Young <jacob.young.1@asu.edu>
+Description: A collection of social networks used in various social network courses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    network
+RoxygenNote: 7.2.3
