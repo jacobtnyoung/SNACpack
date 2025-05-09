@@ -20,6 +20,5 @@
 #'
 #' @examples
 #' data( cocaine_dealing_net )
-#' library( gplot )
-#' gplot( cocaine_dealing_net )
+#' sna::gplot( cocaine_dealing_net )
 "cocaine_dealing_net"

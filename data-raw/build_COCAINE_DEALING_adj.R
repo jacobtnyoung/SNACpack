@@ -20,17 +20,6 @@ library( here )    # set the directory
 mat_file <- here( "data-raw/COCAINE_DEALING_data.csv" )
 
 
-# create the matrix object
-mat <- as.matrix(
-  read.csv(
-    mat_file,
-    as.is = TRUE,
-    header = TRUE,
-    row.names = 1
-    )
-  )
-
-
 # create the network object
 cocaine_dealing_net <- as.network(
   as.matrix(

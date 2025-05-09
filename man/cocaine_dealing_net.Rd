@@ -26,8 +26,7 @@ Vertex attributes:
 }
 \examples{
 data( cocaine_dealing_net )
-library( gplot )
-gplot( cocaine_dealing_net )
+sna::gplot( cocaine_dealing_net )
 }
 \references{
 Natarajan, M. (2006). Understanding the structure of a large heroin distribution network:
