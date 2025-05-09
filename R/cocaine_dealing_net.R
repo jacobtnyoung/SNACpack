@@ -22,3 +22,4 @@
 #' data( cocaine_dealing_net )
 #' library( gplot )
 #' gplot( cocaine_dealing_net )
+"cocaine_dealing_net"
