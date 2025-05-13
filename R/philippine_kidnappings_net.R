@@ -1,0 +1,24 @@
+#' Philippine Kidnappings Network
+#'
+#' A two-mode network of individuals and events represented as a `network` object.
+#'
+#' Data refers to the Abu Sayyaf Group (ASG), a violent non-state actor operating
+#' in the Southern Philippines. In particular, this data is related to the Salast
+#' movement that has been founded by Aburajak Janjalani, a native terrorist of the
+#' Southern Philippines in 1991. ASG is active in kidnapping and other kinds of
+#' terrorist attacks (Gerdes et al. 2014). The reconstructed 2-mode matrix
+#' combines terrorist kidnappers and the terrorist events they have attended.
+#'
+#' @references
+#' Gerdes, L. M., Ringler, K., and Autin, B. (2014). "Assessing the Abu Sayyaf Group's Strategic and Learning Capacities." Studies in Conflict & Terrorism 37, no. 3: 267-293.
+#' \url{http://www.tandfonline.com/eprint/cCV3RJihmG3miPFECpV7/full}
+#'
+#' @format A `network` object with 351 nodes (246 individuals and 105 events) and 402 edges.
+#'
+#' @details
+#' Vertex attributes:
+#' - `vertex.names`: Name of individuals and locations
+#'
+#' @examples
+#' data( philippine_kidnappings_net )
+"philippine_kidnappings_net"
