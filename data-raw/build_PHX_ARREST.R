@@ -38,7 +38,9 @@ dat <- read.csv(
 
 dat_edgelist <- dat %>%
   select(
-    SUBJ_AGE, YEAR,
+    SUBJ_SEX, SIMPLE_SUBJ_RE_GRP,
+    ARST_OFFICER_SEX, SIMPLE_EMPL_RE_GRP,
+    YEAR,
     UNIQUE_NAME_ID, ARST_OFFICER, HUNDREDBLOCKADDR ) %>%  # keep the variables you need
   group_by( HUNDREDBLOCKADDR, ARST_OFFICER ) %>%                      # group by address then officer id
   filter( n() > 1 ) %>%                                               # only keep cases that involve more than 1 person arrested
@@ -126,6 +128,51 @@ year.network <- function( edgelist, year ) {
 
 phx_arrest_2023_net <- year.network( edgelist = dat_edgelist, year = 2023 )
 phx_arrest_2024_net <- year.network( edgelist = dat_edgelist, year = 2024 )
+
+
+# ----
+# assign attributes
+
+assign.vertex.attributes <- function(net, edgelist_df, year,
+                                     id_col = "actor",
+                                     attr_cols = c(
+                                       "SUBJ_SEX", "ARST_OFFICER_SEX", "SIMPLE_SUBJ_RE_GRP", "SIMPLE_EMPL_RE_GRP"
+                                       ),
+                                     attr_names = c(
+                                       "subject_sex", "officer_sex",
+                                       "subject_race_ethnicity", "officer_race_ethnicity"
+                                       ) ) {
+
+  # Get network info
+  net_names <- network.vertex.names(net)
+  net_size <- network.size(net)
+
+  # Filter and align attribute data
+  vertex_attrs_ordered <- edgelist_df |>
+    filter(.data$YEAR == year, .data[[id_col]] %in% net_names) |>
+    select(all_of(c(attr_cols, id_col))) |>
+    distinct(.data[[id_col]], .keep_all = TRUE) |>
+    arrange(match(.data[[id_col]], net_names))
+
+  # Pad helper
+  pad_na <- function(attr_vec) {
+    c(attr_vec, rep(NA, net_size - length(attr_vec)))
+  }
+
+  # Assign attributes
+  for (i in seq_along(attr_cols)) {
+    net %v% attr_names[i] <- pad_na(vertex_attrs_ordered[[attr_cols[i]]])
+  }
+
+  return( net )
+}
+
+
+# ----
+# run the function
+
+phx_arrest_2023_net <- assign.vertex.attributes( phx_arrest_2023_net, dat_edgelist, 2023 )
+phx_arrest_2024_net <- assign.vertex.attributes( phx_arrest_2024_net, dat_edgelist, 2024 )
 
 
 # ----

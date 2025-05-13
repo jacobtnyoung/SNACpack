@@ -1,6 +1,6 @@
 #' Phoenix 2023 Arrest Network
 #'
-#' A mode network of individuals and events represented as a `network` object.
+#' A mode network of individuals arrested and events represented as a `network` object.
 #'
 #' @references
 #' Phoenix Open Data Portal
@@ -10,7 +10,10 @@
 #'
 #' @details
 #' Vertex attributes:
-#' - `vertex.names`: Name of individuals and locations
+#' - `subject_sex`: Sex (Male or Female) of person arrested.
+#' - `officer_sex`: Sex (Male or Female) of arresting officer.
+#' - `subject_race_ethnicity`: Race/Ethnicity of person arrested.
+#' - `officer_race_ethnicity`: Race/Ethnicity of arresting officer.
 #'
 #' @examples
 #' data( phx_arrest_2023_net )

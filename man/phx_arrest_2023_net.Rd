@@ -11,11 +11,14 @@ A `network` object with 3,166 nodes (2,156 individuals and 1,010 events) and 3,4
 phx_arrest_2023_net
 }
 \description{
-A mode network of individuals and events represented as a `network` object.
+A mode network of individuals arrested and events represented as a `network` object.
 }
 \details{
 Vertex attributes:
-- `vertex.names`: Name of individuals and locations
+- `subject_sex`: Sex (Male or Female) of person arrested.
+- `officer_sex`: Sex (Male or Female) of arresting officer.
+- `subject_race_ethnicity`: Race/Ethnicity of person arrested.
+- `officer_race_ethnicity`: Race/Ethnicity of arresting officer.
 }
 \examples{
 data( phx_arrest_2023_net )
