@@ -9,7 +9,7 @@
 #' @param high Maximum of target range.
 #' @return Rescaled numeric vector.
 #' @export
-vertex.rescale <- function( x, low, high ) {
+vertex_rescale <- function( x, low, high ) {
   min_x <- min( x )
   max_x <- max( x )
   ( ( high - low ) * ( x - min_x ) ) / ( max_x - min_x ) + low
@@ -25,7 +25,7 @@ vertex.rescale <- function( x, low, high ) {
 #' @param high Maximum of target range.
 #' @return Rescaled numeric matrix.
 #' @export
-edge.rescale <- function( uni_mat, low, high ){
+edge_rescale <- function( uni_mat, low, high ){
   diag( uni_mat ) <- 0
   min_w <- min( uni_mat[uni_mat != 0] )
   max_w <- max( uni_mat[uni_mat != 0] )
@@ -42,7 +42,7 @@ edge.rescale <- function( uni_mat, low, high ){
 #' values represent darker edges.
 #' @return Rescaled numeric matrix.
 #' @export
-edge.shade <- function( uni_mat ){
+edge_shade <- function( uni_mat ){
   net_edges <- edge.rescale( uni_mat, 0.01, 1 )
   vec_to_color <- as.vector( abs( net_edges ) )
   vec_to_color <- 1 - vec_to_color # subtract 1 to flip the grey function scale

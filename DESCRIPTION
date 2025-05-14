@@ -8,6 +8,8 @@ Description: A collection of social network data used in various social network 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests:
-    network
+Imports:
+    sna,
+    network,
+    plotrix
 RoxygenNote: 7.3.2
