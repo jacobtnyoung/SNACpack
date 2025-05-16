@@ -4,15 +4,29 @@
 
 #' Rescale Numeric Values for a Vertex Attribute to a New Range for Plotting
 #'
+#' This function takes a vector of values that need to be rescaled for a plot.
+#' If the vector is a constant, it will return an error indicating that there
+#' is not a need to rescale the vector.
+#'
 #' @param x A numeric vector.
 #' @param low Minimum of target range.
 #' @param high Maximum of target range.
 #' @return Rescaled numeric vector.
 #' @export
 vertex_rescale <- function( x, low, high ) {
+
+  # check to see if there is the object to be rescaled is a constant
+  if( var( x ) == 0 ){
+    stop( "Error: You have tried to rescale an object that is a constant.
+          But don't worry! Just select a value for the vertex size (i.e. no need to rescale)."
+    )
+  }
+
+  # rescale the values based in the min and max that are passed
   min_x <- min( x )
   max_x <- max( x )
   ( ( high - low ) * ( x - min_x ) ) / ( max_x - min_x ) + low
+
 }
 
 
