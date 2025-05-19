@@ -1,5 +1,5 @@
 # ------------------------------------------- #
-# Build PINS data files for SNACpack
+# Build WOPINS data files for SNACpack
 
 # ----
 # Setup
@@ -16,8 +16,9 @@ library( here )    # set the directory
 # ----
 # load the data
 
-# pull the file
-load( here( "data-raw/PINS_W1_NETWORKS.RData" ) )
+# pull the files
+load( here( "data-raw/WOPINS_S1_NETWORKS.RData" ) )
+load( here( "data-raw/WOPINS_S2_NETWORKS.RData" ) )
 
 
 # ----
@@ -47,28 +48,28 @@ rebuild_network <- function( net, old_attrs, new_attrs ) {
 # ----
 # build the new networks
 
-pins_ga_net <- rebuild_network(
-  get.along.norank.net,
-  old_attrs = c( "Age", "Race", "Time.In" ),
-  new_attrs = c("age", "race", "time_in_prison")
+wopins_s1gb_trust_net <- rebuild_network(
+  SDD.net,
+  old_attrs = c( "Age", "Race", "White", "YearsOnUnit" ),
+  new_attrs = c("age", "race", "white", "time_in_prison")
 )
 
-pins_pi_net <- rebuild_network(
-  powerinfluence.net,
-  old_attrs = c( "Age", "Race", "Time.In" ),
-  new_attrs = c("age", "race", "time_in_prison")
+wopins_s2gb_trust_net <- rebuild_network(
+  SDD.gb.net,
+  old_attrs = c( "Age", "Race", "White", "YearsOnUnit" ),
+  new_attrs = c("age", "race", "white", "time_in_prison")
 )
 
-pins_if_net <- rebuild_network(
-  information.net,
-  old_attrs = c( "Age", "Race", "Time.In" ),
-  new_attrs = c("age", "race", "time_in_prison")
+wopins_s2gp_trust_net <- rebuild_network(
+  SDD.gp.net,
+  old_attrs = c( "Age", "Race", "White", "YearsOnUnit" ),
+  new_attrs = c("age", "race", "white", "time_in_prison")
 )
 
 
 # ----
 # save the object as an .rda object to the data folder for use in the package
 
-save( pins_ga_net, file = "data/pins_ga_net.rda" )
-save( pins_pi_net, file = "data/pins_pi_net.rda" )
-save( pins_if_net, file = "data/pins_if_net.rda" )
+save( wopins_s1gb_trust_net, file = "data/wopins_s1gb_trust_net.rda" )
+save( wopins_s2gb_trust_net, file = "data/wopins_s2gb_trust_net.rda" )
+save( wopins_s2gp_trust_net, file = "data/wopins_s2gp_trust_net.rda" )
