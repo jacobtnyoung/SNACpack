@@ -53,6 +53,13 @@ directed_example_net <- as.network(
 
 
 # ----
+# set the names
+net_names <- c(  "Jen", "Tom", "Bob", "Leaf", "Jim" )
+network.vertex.names( undirected_example_net ) <- net_names
+network.vertex.names( directed_example_net ) <- net_names
+
+
+# ----
 # save the objects as an .rda object to the data folder for use in the package
 
 save( undirected_example_net, file = "data/undirected_example_net.rda" )
