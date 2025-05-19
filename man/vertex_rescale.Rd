@@ -17,5 +17,7 @@ vertex_rescale(x, low, high)
 Rescaled numeric vector.
 }
 \description{
-Rescale Numeric Values for a Vertex Attribute to a New Range for Plotting
+This function takes a vector of values that need to be rescaled for a plot.
+If the vector is a constant, it will return an error indicating that there
+is not a need to rescale the vector.
 }
