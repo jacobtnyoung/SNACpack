@@ -6,6 +6,7 @@
 
 # PINS and WOPINS files
 
-/Users/jyoung20/Github/SNACpack/data-raw/PINS_W1_NETWORKS.RData
-/Users/jyoung20/Github/SNACpack/data-raw/WOPINS_S1_NETWORKS.RData
-/Users/jyoung20/Github/SNACpack/data-raw/WOPINS_S2_NETWORKS.RData
+data-raw/PINS_W1_NETWORKS.RData
+data-raw/PINS_W2_NETWORKS.RData
+data-raw/WOPINS_S1_NETWORKS.RData
+data-raw/WOPINS_S2_NETWORKS.RData
