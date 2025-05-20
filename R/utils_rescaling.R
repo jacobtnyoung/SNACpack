@@ -57,7 +57,7 @@ edge_rescale <- function( uni_mat, low, high ){
 #' @return Rescaled numeric matrix.
 #' @export
 edge_shade <- function( uni_mat ){
-  net_edges <- edge.rescale( uni_mat, 0.01, 1 )
+  net_edges <- edge_rescale( uni_mat, 0.01, 1 )
   vec_to_color <- as.vector( abs( net_edges ) )
   vec_to_color <- 1 - vec_to_color # subtract 1 to flip the grey function scale
   edge_cols <- grey( vec_to_color )
