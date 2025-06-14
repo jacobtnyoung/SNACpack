@@ -16,5 +16,5 @@ sticker(
   s_x = 1,
   s_y = 1.0,
   s_width = 0.8,
-  filename = "SNACpack_sticker.png"
+  filename = "man/figures/SNACpack_sticker.png"
 )

@@ -2,7 +2,7 @@
 
 ## *Social Network Analysis for Crime (Analysts) Package*
 
-![](hex_sticker/SNACpack_sticker.png){width=20%}
+![](man/figures/SNACpack_sticker.png){width=20%}
 
 <br>
 
