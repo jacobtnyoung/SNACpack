@@ -2,6 +2,8 @@
 
 ## *Social Network Analysis for Crime (Analysts) Package*
 
+![](SNACpack_sticker.png){width=20%}
+
 <br>
 
 **SNACpack** is a package developed for crime analysts and criminologists conducting social network analysis (SNA).  
@@ -32,27 +34,29 @@ devtools::install_github( "jacobtnyoung/SNACpack" )
 
 ```r
 
-# the data are objects of class network, so you need the network package
-install.packages( "network" )
-library( network )
-
 # load the library for SNACpack
 library( SNACpack )
 
-# take a look at the cocaine dealing network
-data( "cocaine_dealing_net" )
+```
+
+`SNACpack` includes multiple networks for the user. The data are objects of class `network`, so you need to install the `network` package.
+
+```r
+
+install.packages( "network" )
+library( network )
+
+```
+
+Now, you can look at the data objects. For example, `SNACpack` includes data from Mangia Natarajan’s study of a large cocaine trafficking organization in New York City. The network is directed, binary ties of communication between individuals collected from police wiretaps of telephone conversations. This network is named `cocaine_dealing_net`.
+
+```r
+
+# examine the help page for the network
+?cocaine_dealing_net
 
 # print it out to see the features
 cocaine_dealing_net
 
 ```
-
-
-
-
-
-
-
-
-
 
