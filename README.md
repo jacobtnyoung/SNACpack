@@ -2,7 +2,7 @@
 
 ## *Social Network Analysis for Crime (Analysts) Package*
 
-![](SNACpack_sticker.png){width=20%}
+![](hex_sticker/SNACpack_sticker.png){width=20%}
 
 <br>
 
@@ -16,7 +16,7 @@ courses are taught in the [School of Criminology and Criminal Justice](https://c
 
 ---
 
-## Installation
+## Installation  
 
 To install SNACpack from GitHub:
 
@@ -30,7 +30,7 @@ devtools::install_github( "jacobtnyoung/SNACpack" )
 
 ---
 
-## Example Usage
+## Example Usage  
 
 ```r
 
