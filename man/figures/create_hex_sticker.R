@@ -6,7 +6,7 @@ library( hexSticker )
 
 # Create the hex sticker
 sticker(
-  subplot = "hex_sticker/SNACpack_illustration.png",
+  subplot = "man/figures/SNACpack_illustration.png",
   package = "",
   #p_size = 3.5,
   #p_y = 1.55,
