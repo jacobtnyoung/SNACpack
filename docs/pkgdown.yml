@@ -2,4 +2,7 @@ pandoc: '3.4'
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles: {}
-last_built: 2025-06-15T01:13Z
+last_built: 2025-06-15T01:21Z
+urls:
+  reference: https://jacobtnyoung.github.io/SNACpack/reference
+  article: https://jacobtnyoung.github.io/SNACpack/articles
