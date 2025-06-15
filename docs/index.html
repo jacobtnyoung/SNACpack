@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">SNACpack</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
       </span>
     </div>
 
@@ -62,11 +62,12 @@
 <h2 id="social-network-analysis-for-crime-analysts-package">
 <em>Social Network Analysis for Crime (Analysts) Package</em><a class="anchor" aria-label="anchor" href="#social-network-analysis-for-crime-analysts-package"></a>
 </h2>
-<p><img src="reference/figures/SNACpack_sticker.png" style="width:20.0%"></p>
+<p><img src="reference/figures/SNACpack_sticker.png" style="width:25.0%"></p>
 <p><br></p>
-<p><strong>SNACpack</strong> is a package developed for crime analysts and criminologists conducting social network analysis (SNA).<br>
+<p><code>SNACpack</code> is a package developed for crime analysts and criminologists conducting social network analysis (SNA).<br>
 It includes datasets and helper functions used in the <a href=""><em>Social Network Analysis</em></a> course in the <a href="https://ccj.asu.edu/degree-programs/ms-crime-analysis" class="external-link">Master of Science in Crime Analysis</a> program and the <a href="https://jacobtnyoung.github.io/SAND/" class="external-link"><em>Statistical Analysis of Network Data (SAND)</em></a> course for the <a href="https://ccj.asu.edu/content/criminology-and-criminal-justice-phd" class="external-link">Criminology and Criminal Justice, PhD</a>. Both courses are taught in the <a href="https://ccj.asu.edu" class="external-link">School of Criminology and Criminal Justice</a> at <a href="https://www.asu.edu" class="external-link">Arizona State University</a>.</p>
 <p><br></p>
+<p><code>SNACpack</code> is a companion package to the books <a href="https://jacobtnyoung.github.io/snaca-textbook/" class="external-link"><em>Social Network Analysis for Crime Analysts</em></a> and <a href="https://jacobtnyoung.github.io/snaca-r/" class="external-link"><em>Social Network Analysis for Crime Analysts using R</em></a>. The former is an introductory textbook for crime analysts learning SNA and the latter is a set of <em>tutorials</em> that show the “how to” of SNA in RStudio.</p>
 <hr>
 </div>
 <div class="section level2">
@@ -89,10 +90,12 @@ It includes datasets and helper functions used in the <a href=""><em>Social Netw
 <span><span class="co"># load the library for SNACpack</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span> <span class="va">SNACpack</span> <span class="op">)</span></span></code></pre></div>
 <p><code>SNACpack</code> includes multiple networks for the user. The data are objects of class <code>network</code>, so you need to install the <code>network</code> package.</p>
+<p><br></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span> <span class="st">"network"</span> <span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span> <span class="va"><a href="https://statnet.org/" class="external-link">network</a></span> <span class="op">)</span></span></code></pre></div>
+<p><br></p>
 <p>Now, you can look at the data objects. For example, <code>SNACpack</code> includes data from Mangia Natarajan’s study of a large cocaine trafficking organization in New York City. The network is directed, binary ties of communication between individuals collected from police wiretaps of telephone conversations. This network is named <code>cocaine_dealing_net</code>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
@@ -101,6 +104,14 @@ It includes datasets and helper functions used in the <a href=""><em>Social Netw
 <span></span>
 <span><span class="co"># print it out to see the features</span></span>
 <span><span class="va">cocaine_dealing_net</span></span></code></pre></div>
+<p><br></p>
+<hr>
+<div class="section level3">
+<h3 id="issue-reporting">Issue Reporting<a class="anchor" aria-label="anchor" href="#issue-reporting"></a>
+</h3>
+<p>If you encounter a problem with the package or have suggestions for improvement, please submit an issue to the <a href="https://github.com/jacobtnyoung/SNACpack/issues" class="external-link">Github Issues page</a> for this package. Thanks in advance!</p>
+<p><br><br></p>
+</div>
 </div>
 </div>
   </div>
