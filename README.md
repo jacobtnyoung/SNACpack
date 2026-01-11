@@ -7,7 +7,7 @@
 <br>
 
 `SNACpack` is a package developed for crime analysts and criminologists conducting social network analysis (SNA).  
-It includes datasets and helper functions used in the [*Social Network Analysis*]() course in the [Master of Science in Crime Analysis](https://ccj.asu.edu/degree-programs/ms-crime-analysis) 
+It includes datasets and helper functions used in the [*Social Network Analysis*]() course in the [Master of Science in Crime Analysis](https://degrees.apps.asu.edu/masters-phd/major/ASU00/PPCRIMANMS/crime-analysis-ms) 
 program and the [*Statistical Analysis of Network Data (SAND)*](https://jacobtnyoung.github.io/SAND/) 
 course for the [Criminology and Criminal Justice, PhD](https://ccj.asu.edu/content/criminology-and-criminal-justice-phd). Both
 courses are taught in the [School of Criminology and Criminal Justice](https://ccj.asu.edu) at [Arizona State University](https://www.asu.edu).
