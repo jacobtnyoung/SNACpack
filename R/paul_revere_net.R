@@ -5,7 +5,7 @@
 #' The Paul Revere conspiracy dataset concerns relationships between people and their
 #' affiliations with different organizations in Boston. The dataset refers to Paul Revere,
 #' who was responsible for organizing a local militia of Boston's revolutionary
-#' movement (see http://en.wikipedia.org/wiki/Sons_of_Liberty). The dataset was analysed
+#' movement (see http://en.wikipedia.org/wiki/Sons_of_Liberty ). The dataset was analysed
 #' by Kieran Healy of Duke University. This dataset has been reconstructed by looking
 #' at the information presented in the appendix of the book "Paul Revere's Ride"
 #' published by David Fischer (1994).
