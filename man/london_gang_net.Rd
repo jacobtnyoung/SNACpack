@@ -36,6 +36,6 @@ sna::gplot( london_gang_net )
 }
 \references{
 Grund, T. and Densley, J. (2015). Ethnic homophily and triad closure: Mapping internal gang structure using exponential random graph models. *Journal of Contemporary Criminal Justice*, 31(3), 354–370.
-\url{https://doi.org/10.1177/1043986215594291}
+\url{https://doi.org/10.1177/1043986214553377}
 }
 \keyword{datasets}

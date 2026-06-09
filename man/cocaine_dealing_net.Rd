@@ -31,6 +31,6 @@ sna::gplot( cocaine_dealing_net )
 \references{
 Natarajan, M. (2006). Understanding the structure of a large heroin distribution network:
 A quantitative analysis of qualitative data. *Journal of Quantitative Criminology*, 22(2), 171–192.
-\url{https://doi.org/10.1007/s10940-006-9000-6}
+\url{https://doi.org/10.1007/s10940-006-9007-x}
 }
 \keyword{datasets}

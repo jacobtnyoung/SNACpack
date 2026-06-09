@@ -16,7 +16,7 @@ A two-mode network of individuals and events represented as a `network` object.
 \details{
 Data refers to the Abu Sayyaf Group (ASG), a violent non-state actor operating
 in the Southern Philippines. In particular, this data is related to the Salast
-movement that has been founded by Aburajak Janjalani, a native terrorist of the
+movement that was founded by Aburajak Janjalani, a native terrorist of the
 Southern Philippines in 1991. ASG is active in kidnapping and other kinds of
 terrorist attacks (Gerdes et al. 2014). The reconstructed 2-mode matrix
 combines terrorist kidnappers and the terrorist events they have attended.
