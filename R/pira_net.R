@@ -1,0 +1,33 @@
+#' Provisional Irish Republican Army (PIRA) Network
+#'
+#' A one-mode undirected network of 334 individuals represented as a `network` object.
+#'
+#' Data is on active Provisional IRA members between 1970 and 1998.
+#' Data collected at the International Center for the Study of Terrorism, Pennsylvania State University.
+#' The PIRA network comprises relationships based on co-involvement in a PIRA activity.
+#'
+#' @references
+#' Gill, P., Lee, J., Rethemeyer, K. R., Horgan, J., & Asal, V. (2014).
+#' Lethal connections: The determinants of network connections in the
+#' Provisional Irish Republican Army, 1970–1998.
+#' \emph{International Interactions}, 40(1), 52–78.
+#' https://doi.org/10.1080/03050629.2014.855204.
+#'
+#' @format An `network` object with 334 nodes and 405 edges.
+#'
+#' @details
+#' Vertex attributes:
+#' - `vertex.names`: Name of individual
+#' - `attend_uni`: Whether the individual attended university
+#' - `bomb_maker`: Whether the individual constructed IEDs
+#' - `bomb_planter`: Whether the individual planted IEDs
+#' - `brigade`: Individual's assigned brigade
+#' - `gunman`: Whether the individual acted as a gunman in incidents
+#' - `male`: Sex of the individual where "1" is Male and "0" is Female
+#' - `married`: Whether the individual is married
+#'
+#' @source Data retrieved from \url{https://sites.google.com/site/ucinetsoftware/datasets/covert-networks/provisional-irish-republican-army}
+#'
+#' @examples
+#' sna::gplot( pira_net, gmode = "graph", vertex.col = factor( pira_net %v% "brigade" ) )
+"pira_net"
