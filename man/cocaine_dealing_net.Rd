@@ -25,12 +25,12 @@ Vertex attributes:
 - `vertex.names`: Name of individual
 }
 \examples{
-data( cocaine_dealing_net )
 sna::gplot( cocaine_dealing_net )
 }
 \references{
-Natarajan, M. (2006). Understanding the structure of a large heroin distribution network:
-A quantitative analysis of qualitative data. *Journal of Quantitative Criminology*, 22(2), 171–192.
-\url{https://doi.org/10.1007/s10940-006-9007-x}
+Natarajan, M. (2000). *Understanding the Structure of a Drug Trafficking
+Organization: A Conversational Analysis*. In M. Natarajan & M. Hough (Eds.),
+*Illegal Drug Markets: From Research to Prevention Policy* (Crime Prevention
+Studies, Vol. 11, pp. 273--298). Criminal Justice Press.
 }
 \keyword{datasets}
