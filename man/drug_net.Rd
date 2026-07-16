@@ -5,7 +5,7 @@
 \alias{drug_net}
 \title{Drug Use Network}
 \format{
-An `network` object with 293 nodes and 337 edges.
+An `network` object with 293 nodes and 284 edges.
 }
 \source{
 Data retrieved from \url{https://sites.google.com/site/ucinetsoftware/datasets/covert-networks/drugnet}
@@ -14,7 +14,7 @@ Data retrieved from \url{https://sites.google.com/site/ucinetsoftware/datasets/c
 drug_net
 }
 \description{
-A one-mode directed network of 293 individuals represented as a `network` object.
+A one-mode undirected network of 293 individuals represented as a `network` object.
 }
 \details{
 The network is a result of two years of ethnographic observations of people's drug habits.

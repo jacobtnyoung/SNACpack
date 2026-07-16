@@ -1,6 +1,6 @@
 #' Drug Use Network
 #'
-#' A one-mode directed network of 293 individuals represented as a `network` object.
+#' A one-mode undirected network of 293 individuals represented as a `network` object.
 #'
 #' The network is a result of two years of ethnographic observations of people's drug habits.
 #' The ties represent acquaintances.
@@ -11,7 +11,7 @@
 #' *AIDS and Behavior*, 6(2), 193–206.
 #' \url{https://doi.org/10.1023/A:1015457400897}.
 #'
-#' @format An `network` object with 293 nodes and 337 edges.
+#' @format An `network` object with 293 nodes and 284 edges.
 #'
 #' @details
 #' Vertex attributes:

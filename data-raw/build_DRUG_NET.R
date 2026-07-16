@@ -31,7 +31,7 @@ drug_net <- as.network(
       row.names = 1
     )
   ),
-  directed = TRUE
+  directed = FALSE
 )
 
 
